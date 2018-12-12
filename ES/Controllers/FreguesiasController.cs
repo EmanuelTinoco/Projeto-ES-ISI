@@ -14,6 +14,7 @@ namespace ES.Controllers
     {
         private estp2Entities db = new estp2Entities();
 
+        //espero que esta bosta funcione
         // GET: Freguesias
         public ActionResult Index()
         {
