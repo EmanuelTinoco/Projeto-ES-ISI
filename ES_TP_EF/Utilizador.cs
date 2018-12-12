@@ -11,7 +11,8 @@ namespace ES_TP_EF
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Utilizador
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,14 +21,23 @@ namespace ES_TP_EF
             this.Utilizador_Perfil = new HashSet<Utilizador_Perfil>();
         }
     
+        
         public int id { get; set; }
+        [Display(Name = "Codigo Postal:")]
         public string cod_postal { get; set; }
+        [Display(Name = "Nome Completo:")]
         public string nome { get; set; }
+        [Display(Name = "Numero Cartao Cidadao:")]
         public string cc { get; set; }
+        [Display(Name = "Numero Cartao Eleitor:")]
         public string n_eleitor { get; set; }
+        [Display(Name = "Email:")]
         public string email { get; set; }
+        [Display(Name = "User Name:")]
         public string username { get; set; }
+        [Display(Name = "Password:")]
         public string password { get; set; }
+        [Display(Name = "Contacto:")]
         public int contacto { get; set; }
     
         public virtual Agendamento Agendamento { get; set; }
