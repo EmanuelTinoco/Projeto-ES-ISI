@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.Mvc;
 using ES_TP_EF;
 
+//test daniel
+
 namespace ES.Controllers
 {
     public class FreguesiasController : Controller
